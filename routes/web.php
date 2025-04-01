@@ -20,7 +20,7 @@ Route::fallback(function(){
 
 
 
-Route::prefix('/api')->gruop(function(){
+Route::prefix('/api')->group(function(){
 
     Route::get('/login',function(){
         return 'Login';
