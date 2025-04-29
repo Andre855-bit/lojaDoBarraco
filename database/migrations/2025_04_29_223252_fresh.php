@@ -11,20 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('produtos_2', function(Blueprint $table){
-            
-        $table->id();
-        $table->string('nome',100);
-        $table->string('email',100);
-        $table->text('descrição');
-        });
-    
+        //
     }
+
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-       Schema::dropIfExists('produtos_2');
+        //
     }
 };
