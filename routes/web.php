@@ -16,7 +16,7 @@ Route::get('/criar-usuario', [App\Http\Controllers\CriarUsuarioController::class
 
 Route::get('/criar-loja', [App\Http\Controllers\CriarLojasController::class, 'criarLoja'])->name('site.loja');
 
-Route::get('/criar-servico', [App\Http\Controllers\CriarUsuarioController::class, 'criarServico'])->name('site.servico');
+Route::get('/criar-servico', [App\Http\Controllers\CriarServicosController::class, 'criarServico'])->name('site.servico');
 
 Route::fallback(function(){
     echo 'A rota acessada não existe.

@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class CriarServicosController extends Controller
 {
     public function criarServico(){
-        return View('site.criar-servicos');
+        return View('site.criar-servico');
     }
 }
