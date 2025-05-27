@@ -12,6 +12,12 @@ Route::get('/fornecedores', [App\Http\Controllers\FornecedoresController::class,
 
 Route::get('/servicos', [App\Http\Controllers\ServicosController::class, 'servicos']);
 
+Route::get('/criar-usuario', [App\Http\Controllers\CriarUsuarioController::class, 'criarUsuario'])->name('site.usuario');
+
+Route::get('/criar-loja', [App\Http\Controllers\CriarLojasController::class, 'criarLoja'])->name('site.loja');
+
+Route::get('/criar-servico', [App\Http\Controllers\CriarUsuarioController::class, 'criarServico'])->name('site.servico');
+
 Route::fallback(function(){
     echo 'A rota acessada não existe.
     <a href="'.route('site.principal').'">Clique aqui,</a>
